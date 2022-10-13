@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		ABAD716B28F7B452003537A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD716A28F7B452003537A0 /* AppDelegate.swift */; };
-		ABAD716D28F7B452003537A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD716C28F7B452003537A0 /* SceneDelegate.swift */; };
 		ABAD716F28F7B452003537A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD716E28F7B452003537A0 /* ViewController.swift */; };
-		ABAD717228F7B452003537A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAD717028F7B452003537A0 /* Main.storyboard */; };
 		ABAD717428F7B452003537A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAD717328F7B452003537A0 /* Assets.xcassets */; };
 		ABAD717728F7B452003537A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAD717528F7B452003537A0 /* LaunchScreen.storyboard */; };
 		ABAD718228F7B453003537A0 /* GeekTranslationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD718128F7B453003537A0 /* GeekTranslationsTests.swift */; };
 		ABAD718C28F7B453003537A0 /* GeekTranslationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD718B28F7B453003537A0 /* GeekTranslationsUITests.swift */; };
 		ABAD718E28F7B453003537A0 /* GeekTranslationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD718D28F7B453003537A0 /* GeekTranslationsUITestsLaunchTests.swift */; };
+		ABAD719E28F7B5AC003537A0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAD719D28F7B5AC003537A0 /* CoreDataManager.swift */; };
+		ABAD71A128F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABAD719F28F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +38,7 @@
 /* Begin PBXFileReference section */
 		ABAD716728F7B452003537A0 /* GeekTranslations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekTranslations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAD716A28F7B452003537A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABAD716C28F7B452003537A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ABAD716E28F7B452003537A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ABAD717128F7B452003537A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABAD717328F7B452003537A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABAD717628F7B452003537A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABAD717828F7B452003537A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		ABAD718728F7B453003537A0 /* GeekTranslationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeekTranslationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABAD718B28F7B453003537A0 /* GeekTranslationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekTranslationsUITests.swift; sourceTree = "<group>"; };
 		ABAD718D28F7B453003537A0 /* GeekTranslationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeekTranslationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABAD719D28F7B5AC003537A0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		ABAD71A028F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteTranslationsCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		ABAD716928F7B452003537A0 /* GeekTranslations */ = {
 			isa = PBXGroup;
 			children = (
+				ABAD719C28F7B58F003537A0 /* Controller */,
+				ABAD719B28F7B57C003537A0 /* View */,
+				ABAD719A28F7B56B003537A0 /* Model */,
 				ABAD716A28F7B452003537A0 /* AppDelegate.swift */,
-				ABAD716C28F7B452003537A0 /* SceneDelegate.swift */,
-				ABAD716E28F7B452003537A0 /* ViewController.swift */,
-				ABAD717028F7B452003537A0 /* Main.storyboard */,
 				ABAD717328F7B452003537A0 /* Assets.xcassets */,
 				ABAD717528F7B452003537A0 /* LaunchScreen.storyboard */,
 				ABAD717828F7B452003537A0 /* Info.plist */,
@@ -127,6 +127,30 @@
 			path = GeekTranslationsUITests;
 			sourceTree = "<group>";
 		};
+		ABAD719A28F7B56B003537A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABAD719D28F7B5AC003537A0 /* CoreDataManager.swift */,
+				ABAD719F28F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ABAD719B28F7B57C003537A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABAD719C28F7B58F003537A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABAD716E28F7B452003537A0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +161,7 @@
 				ABAD716328F7B452003537A0 /* Sources */,
 				ABAD716428F7B452003537A0 /* Frameworks */,
 				ABAD716528F7B452003537A0 /* Resources */,
+				ABAD71A228F82DF4003537A0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,7 +258,6 @@
 			files = (
 				ABAD717728F7B452003537A0 /* LaunchScreen.storyboard in Resources */,
 				ABAD717428F7B452003537A0 /* Assets.xcassets in Resources */,
-				ABAD717228F7B452003537A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +277,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABAD71A228F82DF4003537A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABAD716328F7B452003537A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAD71A128F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodeld in Sources */,
+				ABAD719E28F7B5AC003537A0 /* CoreDataManager.swift in Sources */,
 				ABAD716F28F7B452003537A0 /* ViewController.swift in Sources */,
 				ABAD716B28F7B452003537A0 /* AppDelegate.swift in Sources */,
-				ABAD716D28F7B452003537A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +342,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ABAD717028F7B452003537A0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ABAD717128F7B452003537A0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ABAD717528F7B452003537A0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +479,6 @@
 				INFOPLIST_FILE = GeekTranslations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +506,6 @@
 				INFOPLIST_FILE = GeekTranslations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -602,6 +637,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ABAD719F28F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ABAD71A028F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = ABAD71A028F7B62E003537A0 /* FavoriteTranslationsCoreDataModel.xcdatamodel */;
+			path = FavoriteTranslationsCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ABAD715F28F7B452003537A0 /* Project object */;
 }
